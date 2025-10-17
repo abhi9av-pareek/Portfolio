@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="home"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>𝙰𝚋𝚑𝚒𝟿𝚊𝚟</h2>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Vanta.js Background -->
+    <div id="vanta-birds" style="width: 100%; height: 100vh">
+      <div class="vanta-content">
+        <!-- Profile Photo on Left -->
+        <img
+          src="/images/profile.jpg"
+          alt="Abhinav Profile"
+          class="profile-image-vanta"
+        />
+
+        <!-- Intro Content on Right -->
+        <div class="intro-section">
+          <div class="heading-container">
+            <h1 class="slideshow-container">
+              <span class="slide active" data-slide="1"
+                >Hi, I Am Full Stack Developer
+              </span>
+              <!-- <span class="slide" data-slide="2">Legend to Legend</span> -->
+              <span class="slide" data-slide="3">𝓐𝓫𝓱𝓲𝓷𝓪𝓿 𝓟𝓪𝓻𝓮𝓮𝓴</span>
+              <!-- <span class="slide" data-slide="4"
+                ><span class="highlight">𝓐𝓫𝓱𝓲𝓷𝓪𝓿 𝓟𝓪𝓻𝓮𝓮𝓴</span></span
+              > -->
+            </h1>
+          </div>
+
+          <p class="hero-description"></p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary no-ripple hero-btn"
+              ><span>Work</span></a
+            >
+            <a href="#contact" class="btn btn-secondary no-ripple hero-btn"
+              ><span>Get In Touch</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate developer. I love creating innovative solutions
+              and learning new technologies.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new places, reading
+              tech blogs, or working on personal projects.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>3</h3>
+                <p>Projects Completed</p>
+              </div>
+              <div class="stat">
+                <h3>1+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat">
+                <h3>100%</h3>
+                <p>Client Satisfaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">HTML5</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                class="skill-tag"
+              >
+                <span class="skill-tag">CSS3</span>
+              </a>
+              <a
+                href="https://www.geeksforgeeks.org/javascript/javascript-tutorial/"
+                target="_blank"
+                class="skill-tag"
+              >
+                <span class="skill-tag">JavaScript</span>
+              </a>
+
+              <a
+                href="https://react.dev/learn"
+                target="_blank"
+                class="skill-tag"
+              >
+                <span class="skill-tag">React</span>
+              </a>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-items">
+              <a
+                href="https://www.geeksforgeeks.org/node-js/nodejs/"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">Node.js</span>
+              </a>
+              <a
+                href="https://expressjs.com/"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">Express</span>
+              </a>
+              <a
+                href="https://www.mongodb.com/"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">MongoDB</span>
+              </a>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-items">
+              <a
+                href="https://git-scm.com/"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">Git</span>
+              </a>
+
+              <a
+                href="https://www.docker.com/"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">Docker</span>
+              </a>
+              <a
+                href="https://aws.amazon.com/"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">AWS</span>
+              </a>
+              <a
+                href="https://www.figma.com/"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">Figma</span>
+              </a>
+              <a
+                href="https://code.visualstudio.com/docs/getstarted/getting-started"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">VS Code</span>
+              </a>
+              <a
+                href="https://cursor.com/en/learn"
+                target="_blank"
+                class="skill-items"
+              >
+                <span class="skill-tag">Cursor Ai</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <div class="project-content">
+              <h3>Download manager-cli</h3>
+              <p>A cli tool which helps you to download file using Terminal</p>
+              <div class="project-tech">
+                <!-- <span class="tech-tag"></span> -->
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/abhi9av-pareek/download-manager"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>
+                “Designing sleek, modern web experiences that connect innovation
+                with simplicity.”
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">javascript</span>
+                <span class="tech-tag">Node</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Html</span>
+                <span class="tech-tag">Css</span>
+                <span class="tech-tag">some more...</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/abhi9av-pareek/portfolio"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+                <a
+                  href="https://abhi9av-pareek.github.io/"
+                  target="_blank"
+                  class="project-link"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="project-content">
+              <h3>Upcomming....</h3>
+              <p>
+                The next-gen exam prep ecosystem offering interactive content,
+                expert mentorship, and adaptive learning tools.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">...</span>
+                <span class="tech-tag">...</span>
+                <span class="tech-tag">...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's work together!</h3>
+            <p>
+              I'm always interested in new opportunities and exciting projects.
+              Feel free to reach out!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>abhinavrajpurohit900@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 8946925061</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Jaipur, India</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/abhi9av-pareek"
+                target="_blank"
+                class="social-link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abhinav-pareek-24426a286/"
+                target="_blank"
+                class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://x.com/AbhiPar43107456"
+                target="_blank"
+                class="social-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 abhi9av-pareek. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- App Alert Modal -->
+    <div id="app-alert" class="app-alert" aria-hidden="true">
+      <div class="app-alert-backdrop" data-close-alert="true"></div>
+      <div
+        class="app-alert-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="app-alert-title"
+      >
+        <button
+          class="app-alert-close"
+          aria-label="Close"
+          data-close-alert="true"
+        >
+          &times;
+        </button>
+        <div class="app-alert-title" id="app-alert-title">
+          <span>Abhi9av says</span>
+        </div>
+        <div class="app-alert-message"></div>
+      </div>
+    </div>
+    <!-- for cursor -->
+    <div class="cursor"></div>
+    <!-- vantajs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+
+    <!--Floating Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+      <div class="chatbot-header">
+        <h4>AbhiBot 🤖</h4>
+        <button id="closeChat">✖</button>
+      </div>
+      <div class="chatbot-body" id="chatBody">
+        <p class="bot-msg">
+          Hi there! 👋 I'm AbhiBot — how can I help you today?
+        </p>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </body>
+</html>
