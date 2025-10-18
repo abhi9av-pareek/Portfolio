@@ -385,7 +385,7 @@ document.addEventListener("mousemove", (e) => {
       separation: 20.0,
       alignment: 20.0,
       cohesion: 20.0,
-      quantity: 4.0,
+      quantity: 3.5,
     });
   }
   function destroyBirds() {
