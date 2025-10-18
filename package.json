@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "body-parser": "^2.2.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
