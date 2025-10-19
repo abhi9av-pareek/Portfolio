@@ -17,7 +17,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("✅ MongoDB Connected"))
+  .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error(err));
 
 // Schema & Model
@@ -64,7 +64,7 @@ async function trySendSms(payload) {
   try {
     const client = new twilio(sid, token);
     await client.messages.create({
-      body: `📩 New Portfolio Contact\nName: ${payload.name}\nEmail: ${payload.email}\nSubject: ${payload.subject}\nMessage: ${payload.message}`,
+      body: `New Portfolio Contact\nName: ${payload.name}\nEmail: ${payload.email}\nSubject: ${payload.subject}\nMessage: ${payload.message}`,
       from,
       to,
     });
@@ -90,7 +90,7 @@ app.post("/contact", async (req, res) => {
     trySendEmail(req.body);
     trySendSms(req.body);
 
-    res.json({ success: true, message: "Message received ✅" });
+    res.json({ success: true, message: "Message received " });
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, message: "Server error" });
@@ -99,5 +99,5 @@ app.post("/contact", async (req, res) => {
 
 // Start server
 app.listen(3001, () => {
-  console.log("🚀 Server running on http://localhost:3001");
+  console.log("Server running on http://localhost:3001");
 });
