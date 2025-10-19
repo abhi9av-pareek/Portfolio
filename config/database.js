@@ -4,8 +4,13 @@ const connectToMongoDB = async () => {
   try {
     const mongoUri = process.env.MONGO_URI;
 
+    console.log("Database connection debug:");
+    console.log("MONGO_URI exists:", !!mongoUri);
+    console.log("MONGO_URI length:", mongoUri ? mongoUri.length : 0);
+    console.log("Environment:", process.env.NODE_ENV);
+
     if (!mongoUri) {
-      console.warn("⚠️ MONGO_URI not found in environment variables");
+      console.warn("MONGO_URI not found in environment variables");
       return false;
     }
 
@@ -16,14 +21,14 @@ const connectToMongoDB = async () => {
         serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
         socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
       });
-      console.log("✅ MongoDB Connected successfully");
+      console.log("MongoDB Connected successfully");
       return true;
     } else if (mongoose.connection.readyState === 1) {
-      console.log("✅ MongoDB already connected");
+      console.log("MongoDB already connected");
       return true;
     }
   } catch (error) {
-    console.error("❌ MongoDB connection failed:", error.message);
+    console.error("MongoDB connection failed:", error.message);
     return false;
   }
 };
