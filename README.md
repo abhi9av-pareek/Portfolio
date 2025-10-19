@@ -2,7 +2,7 @@
 
 A modern portfolio website built with Node.js, Express, and MongoDB.
 
-## 🚀 Features
+## Features
 
 - Responsive design
 - Contact form with email notifications
@@ -10,7 +10,7 @@ A modern portfolio website built with Node.js, Express, and MongoDB.
 - MongoDB database integration
 - Vercel deployment ready
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio/
@@ -36,7 +36,7 @@ portfolio/
 └── server.js        # Server entry point
 ```
 
-## 🛠️ Setup
+## Setup
 
 1. **Clone the repository**
 
@@ -70,7 +70,7 @@ portfolio/
    npm start
    ```
 
-## 🌐 Deployment
+## Deployment
 
 ### Vercel Deployment
 
@@ -93,14 +93,14 @@ portfolio/
    vercel --prod
    ```
 
-## 📧 Email Configuration
+## Email Configuration
 
 1. **Gmail Setup**
    - Enable 2-factor authentication
    - Generate an App Password
    - Use the App Password in `GMAIL_APP_PASSWORD`
 
-## 📱 SMS Configuration
+## SMS Configuration
 
 1. **Twilio Setup**
    - Create a Twilio account
@@ -108,7 +108,7 @@ portfolio/
    - Purchase a phone number
    - Add credentials to environment variables
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### MongoDB Connection Issues
 
@@ -128,19 +128,19 @@ portfolio/
 - Check phone number format
 - Ensure sufficient Twilio balance
 
-## 📝 API Endpoints
+## API Endpoints
 
 - `POST /contact` - Handle contact form submissions
 - `GET /` - Home page
 - `GET /portfolio` - Portfolio page
 
-## 🛡️ Security
+## Security
 
 - Environment variables are properly secured
 - Input validation on contact form
 - CORS configured for production
 - Error handling implemented
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
